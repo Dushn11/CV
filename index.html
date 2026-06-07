@@ -1,0 +1,432 @@
+<!--
+ ┌──────────────────────────────────────────────────────────────────────┐
+ │ @name         CV generator                                           │
+ │ @author       Léa Gallier                                            │
+ │ @version      1.0                                                    │
+ │ @created      2022-12-19                                             │
+ │ @modified     2023-03-17                                             │
+ │ @description  Resume CV with dark/light mode and PDF export          │
+ └──────────────────────────────────────────────────────────────────────┘
+-->
+
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="">
+    <title>CV</title>
+
+    <!-- Import Fontawesome -->
+    <script src="https://kit.fontawesome.com/cb81440751.js" crossorigin="anonymous"></script>
+
+    <!-- Import stylesheets in CSS3 -->
+    <link rel="stylesheet" href="assets/stylesheets/style.css" type="text/css">
+
+</head>
+
+<body>
+
+    <main class="l-main bd-container">
+        <!-- Resume CV -->
+        <div class="resume" id="area-cv">
+            <div class="resume_left">
+
+                <!-- HOME -->
+                <section class="home" id="home">
+                    <div class="home_container section bd-grid">
+
+                        <div class="home_data bd-grid">
+                            <!-- <img src="assets/pictures/profile.png" alt="Icon picture" class="home_img" id="home-img"> -->
+                            <!--<img alt="Icon picture" class="home_img" id="home-img">-->
+                            <h1 class="home_title">Maksym <b>BILOUS</b></h1>
+                            <h3 class="home_profession">Programista frontend</h3>
+                            <div>
+                                <a download="" id="download-button" class="home_button-movil">Pobierz</a>
+                            </div>
+                        </div>
+
+                        <div class="home_address bd-grid">
+                            <span class="home_information">
+                                <i class="fa-solid fa-location-dot home_icon"></i> Kraków, Polska
+                            </span>
+                            <span class="home_information">
+                                <a href="mailto:m.a.bilous2010@gmail.com" class="home_link">
+                                    <i class="fa-solid fa-envelope home_icon"></i> m.a.bilous2010@gmail.com
+                                </a>
+                            </span>
+                            <span class="home_information">
+                                <a href="tel:+48664120915" class="home_link">
+                                    <i class="fa-solid fa-phone home_icon"></i> +48 664 120 915
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Theme change button -->
+                    <i class="fa-solid fa-moon change-theme" title="Motyw" id="theme-button"></i>
+
+                    <!-- Button to generate and download the pdf. Available for desktop. -->
+                    <i class="fa-solid fa-download generate-pdf" title="Generuj PDF" id="resume-button"></i>
+
+                </section>
+
+                <!-- SOCIAL -->
+                <section class="social section">
+                    <h2 class="section-title">Media społecznościowe</h2>
+
+                    <div class="social_container bd-grid">
+                        <a href="https://github.com/Dushn11" target="_blank" class="social_link">
+                            <i class="fa-brands fa-github social_icon"></i> @Dushn11
+                        </a>
+                    </div>
+                </section>
+
+                <!-- PROFILE -->
+                <section class="profile section" id="profile">
+                    <h2 class="section-title">Profil</h2>
+
+                    <p class="profile_description">
+                        Jestem programistą frontend z pasją do tworzenia responsywnych i przyjaznych użytkownikowi
+                        aplikacji webowych. Mam solidne podstawy w HTML, CSS i JavaScript, a także chętnie uczę się
+                        nowych technologii i rozwijam swoje umiejętności.
+                    </p>
+                </section>
+
+                <!-- SKILLS  -->
+
+
+                <!-- LANGUAGES -->
+                <section class="languages section" id="languages">
+                    <h2 class="section-title">Języki</h2>
+
+                    <div class="languages_container">
+                        <ul class="languages_content bd-grid">
+                            <li class="languages_name">
+                                <span class="languages_text">Polski</span>
+                                <span class="languages_stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star languages_stars_checked"></i>
+                                </span>
+                            </li>
+                            <li class="languages_name">
+                                <span class="languages_text">Ukraiński</span>
+                                <span class="languages_stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </li>
+                            <li class="languages_name">
+                                <span class="languages_text">Angielski</span>
+                                <span class="languages_stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star languages_stars_checked"></i>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+            </div>
+
+            <div class="resume_right">
+                <section class="skills section" id="skills">
+                    <h2 class="section-title">Umiejętności</h2>
+                    <div class="skills_container">
+                        <div class="bd-grid">
+                            <div>
+                                <h3 class="skills_subtitle">Programowanie</h3>
+                                <div class="skills_content bd-grid">
+                                    <div class="skills_name">
+                                        <span class="skills_text">C#</span>
+                                        <div class="skills_box">
+                                            <span class="skills_progress" style="width: 75%;"></span>
+                                        </div>
+                                    </div>
+                                    <div class="skills_name">
+                                        <span class="skills_text">Python</span>
+                                        <div class="skills_box">
+                                            <span class="skills_progress" style="width: 65%;"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="skills_subtitle">Tworzenie stron WWW</h3>
+                                <div class="skills_content bd-grid">
+                                    <div class="skills_name">
+                                        <span class="skills_text">JavaScript</span>
+                                        <div class="skills_box">
+                                            <span class="skills_progress" style="width: 85%;"></span>
+                                        </div>
+                                    </div>
+                                    <div class="skills_name">
+                                        <span class="skills_text">TypeScript</span>
+                                        <div class="skills_box">
+                                            <span class="skills_progress" style="width: 65%;"></span>
+                                        </div>
+                                    </div>
+                                    <div class="skills_name">
+                                        <span class="skills_text">HTML 5</span>
+                                        <div class="skills_box">
+                                            <span class="skills_progress" style="width: 95%;"></span>
+                                        </div>
+                                    </div>
+                                    <div class="skills_name">
+                                        <span class="skills_text">CSS 3</span>
+                                        <div class="skills_box">
+                                            <span class="skills_progress" style="width: 85%;"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="skills_subtitle">Bazy danych</h3>
+                                <div class="skills_content bd-grid">
+                                    <div class="skills_name">
+                                        <span class="skills_text">SQL</span>
+                                        <div class="skills_box">
+                                            <span class="skills_progress" style="width: 75%;"></span>
+                                        </div>
+                                    </div>
+                                    <div class="skills_name">
+                                        <span class="skills_text">MySQL</span>
+                                        <div class="skills_box">
+                                            <span class="skills_progress" style="width: 80%;"></span>
+                                        </div>
+                                    </div>
+                                    <div class="skills_name">
+                                        <span class="skills_text">PostgreSQL</span>
+                                        <div class="skills_box">
+                                            <span class="skills_progress" style="width: 60%;"></span>
+                                        </div>
+                                    </div>
+                                    <div class="skills_name">
+                                        <span class="skills_text">MariaDB</span>
+                                        <div class="skills_box">
+                                            <span class="skills_progress" style="width: 75%;"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="skills_subtitle">Frameworki</h3>
+                                <div class="skills_content bd-grid">
+                                    <div class="skills_name">
+                                        <span class="skills_text">Angular</span>
+                                        <div class="skills_box">
+                                            <span class="skills_progress" style="width: 70%;"></span>
+                                        </div>
+                                    </div>
+                                    <div class="skills_name">
+                                        <span class="skills_text">Tailwind CSS</span>
+                                        <div class="skills_box">
+                                            <span class="skills_progress" style="width: 50%;"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="skills_subtitle">Narzędzia</h3>
+                                <div class="skills_content bd-grid">
+                                    <div class="skills_name">
+                                        <span class="skills_text">Git</span>
+                                        <div class="skills_box">
+                                            <span class="skills_progress" style="width: 65%;"></span>
+                                        </div>
+                                    </div>
+                                    <div class="skills_name">
+                                        <span class="skills_text">Docker</span>
+                                        <div class="skills_box">
+                                            <span class="skills_progress" style="width: 35%;"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="skills_subtitle">Inne</h3>
+                                <div class="skills_content bd-grid">
+                                    <div class="skills_name">
+                                        <span class="skills_text">Windows</span>
+                                        <div class="skills_box">
+                                            <span class="skills_progress" style="width: 95%;"></span>
+                                        </div>
+                                    </div>
+                                    <div class="skills_name">
+                                        <span class="skills_text">Linux</span>
+                                        <div class="skills_box">
+                                            <span class="skills_progress" style="width: 47%;"></span>
+                                        </div>
+                                    </div>
+                                    <div class="skills_name">
+                                        <span class="skills_text">Agile</span>
+                                        <div class="skills_box">
+                                            <span class="skills_progress" style="width: 55%;"></span>
+                                        </div>
+                                    </div>
+                                    <div class="skills_name">
+                                        <span class="skills_text">MS Excel</span>
+                                        <div class="skills_box">
+                                            <span class="skills_progress" style="width: 70%;"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>W czasie lekcji zawodowych zapoznałem sie z:</h4>
+                        <ul>
+                            <li>Bazami danych(MariaDB)</li>
+                            <li>1NF, 2NF, 3NF baz danych</li>
+                            <li>Konfigurowanie urządzeń sieciowych</li>
+                            <li>OOP w C# oraz Python</li>
+                            <li>Oraz inne</li>
+                        </ul>
+                        <h4>Mam doświadzenie w:</h4>
+                        <ul>
+                            <li>Wdrożenie serwera WWW z PostgreSQL na Rasberry PI za pomocą Docker</li>
+                            <li>Obsłudze komputerow oraz pereferii komputerowej</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- PROJECTS -->
+                <section class="project section" id="projects">
+                    <h2 class="section-title">Projekty</h2>
+                    <div class="project_container bd-grid">
+                        <div class="project_content">
+                            <h3 class="project_title">FinTrack: Panel Finansów Osobistych</h3>
+                            <div class="project_description">
+                                <ol>
+                                    <li>Lider zespołu i programista frontend w 3-osobowym zespole</li>
+                                    <li>Zaprojektowałem strukturę bazy danych PostgreSQL</li>
+                                    <li>Wdrożyłem import CSV z dynamicznym mapowaniem kolumn</li>
+                                    <li>Opracowałem interaktywne pulpity finansowe w Angular</li>
+                                    <li>Zintegrowałem frontend z API Spring Boot i Flask</li>
+                                    <li>Stworzyłem wizualizacje danych przy użyciu ng2-charts</li>
+                                    <li>Wdrożyłem aplikację na Dockerze z nginx</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="project_github">
+                            Dowiedz się więcej na GitHubie <a href="https://github.com/Dushn11/finance-dashboard"
+                                target="_blank" class="project_link">
+                                <span class="project_link-text">Repozytorium</span>
+                            </a>
+                        </div>
+                        <div class="project_content">
+                            <h3 class="project_title">Tetris w przeglądarce</h3>
+                            <div class="project_description">
+                                <ul>
+                                    <li>Projekt własny</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- EDUCATION -->
+                <section class="education section" id="education">
+                    <h2 class="section-title">Edukacja</h2>
+
+                    <div class="education_container bd-grid">
+                        <div class="education_content">
+                            <div class="education_time">
+                                <span class="education_rounder"></span>
+                                <span class="education_line"></span>
+                            </div>
+                            <div class="education_data bd-grid">
+                                <h3 class="education_title">Technik Programista</h3>
+                                <span class="education_studies">Zespół Szkół Elektrycznych nr 1 im. Powstańców Śląskich
+                                    w Krakowie</span>
+                                <span class="education_year">2024 - obecnie</span>
+                            </div>
+                        </div>
+                        <div class="education_content">
+                            <div class="education_time">
+                                <span class="education_rounder"></span>
+                            </div>
+                            <div class="education_data bd-grid">
+                                <h3 class="education_title">Szkoła Podstawowa</h3>
+                                <span class="education_studies">Szkoła Podstawowa z Oddziałami Integracyjnymi nr
+                                    90</span>
+                                <span class="education_year">2022 - 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- OTHER -->
+                <section>
+                    <h2 class="section-title">Inne</h2>
+                    <div class="other_container bd-grid">
+                        <div class="other_content">
+                            <i class="fa-solid fa-award other_icon"></i>
+                            <span class="other_name">Uczestnik licznych meetupów oraz warsztatów NextGenIT</span>
+                        </div>
+                        <div class="other_content">
+                            <i class="fa-solid fa-award other_icon"></i>
+                            <span class="other_name">Uczestnik hackathonu WSEICRAFT 13-14.03.2026 </span>
+                        </div>
+                        <div class="other_content">
+                            <i class="fa-solid fa-award other_icon"></i>
+                            <span class="other_name">Ponad 10 zwycięstw w różnych turniejach akrobatyki
+                                powietrznej(w tym Grand Prix w turnieju międzynarodowym)</span>
+                        </div>
+                    </div>
+                </section>
+                <!-- INTERESTS -->
+                <section class="interests section" id="interests">
+                    <h2 class="section-title">Zainteresowania</h2>
+                    <div class="interests_container bd-grid">
+                        <div class="interests_content">
+                            <i class="fa-solid fa-dumbbell interests_icon"></i>
+                            <span class="interests_name">Sport</span>
+                        </div>
+                        <div class="interests_content">
+                            <i class="fa-solid fa-film interests_icon"></i>
+                            <span class="interests_name">Filmy/Seriale</span>
+                        </div>
+                        <div class="interests_content">
+                            <i class="fa-solid fa-code interests_icon"></i>
+                            <span class="interests_name">Programowanie</span>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <div class="consent">
+        <p>Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w niniejszym CV w celu przeprowadzenia rekrutacji.</p>
+    </div>
+
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class="fa-solid fa-arrow-up scrolltop_icon"></i>
+    </a>
+
+    <!-- HTML2PDF.js -->
+    <!-- Version 0.8.0 -->
+    <!-- <script src="assets/javascripts/html2pdf.v0.8.0.bundle.min.js"></script> -->
+    <!-- Version 0.9.3 -->
+    <script src="assets/javascripts/html2pdf.v0.9.3.bundle.min.js"></script>
+
+    <!-- Main Javascript file -->
+    <script src="assets/javascripts/main.js"></script>
+</body>
+
+</html>
